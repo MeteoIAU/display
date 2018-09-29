@@ -1,9 +1,7 @@
 <template lang="pug">
   .hello
     h1 {{ msg }}
-    p
-      For guide and recipes on how to configure / customize this project,<br>
-      check out the
+    p For guide and recipes on how to configure / customize this project,<br> check out the
       a(href="https://cli.vuejs.org" target="_blank" rel="noopener") vue-cli documentation.
 </template>
 
@@ -11,7 +9,10 @@
 export default {
   name: "HelloWorld",
   props: {
-    msg: String
+    msg: {
+      default: "",
+      type: String
+    }
   }
 };
 </script>
